@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: org.deviceconnect:dconnect-device-plugin-sdk-2.3.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dconnect-device-plugin-sdk-2.3.3.aar/9b23eb9b1675ac670c511f9cbca4d3fd/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dconnect-device-plugin-sdk-2.3.3.aar/9b23eb9b1675ac670c511f9cbca4d3fd/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
