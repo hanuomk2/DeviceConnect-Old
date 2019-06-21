@@ -6,7 +6,7 @@
 Android Studio 2.2.1以上
 
 ## ビルドマニュアル
-- [Sony Smart Watchビルドマニュアル](https://github.com/DeviceConnect/DeviceConnect-Android/wiki/SonySW-Build)
+- [Sony Smart Watchビルドマニュアル](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/SonySW-Build)
 
 ## サポートするプロファイル
 

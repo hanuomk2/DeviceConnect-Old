@@ -2,7 +2,7 @@
 
 # About DeviceConnect-Old
 Device Connect WebAPI in WebAPI which operates as a virtual server on the smartphone, it can be easy to use in a uniform description of various wearable devices and IoT devices from a Web browser and apps.
-Device Connect Old is a source code for plugins and apps of Device Connect system that has unsupported working on the latest version of platform.
+DeviceConnect Old is a source code source for plug-ins and apps for Device Connect systems that can not be supported on the latest version of the platform.
 
 In this guide I will continue to discuss the following.
 

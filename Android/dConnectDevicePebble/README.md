@@ -8,7 +8,7 @@
 Android Studio 2.2.1以上
 
 ## ビルドマニュアル
-- [Pebbleビルドマニュアル](https://github.com/DeviceConnect/DeviceConnect-Android/wiki/Pebble-Build)
+- [Pebbleビルドマニュアル](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/Pebble-Build)
 
 ## サポートするプロファイル
 
@@ -20,7 +20,3 @@ Android Studio 2.2.1以上
 * proximity
 * setting
 * vibration
-
-## 関連ページ
-- [Pebble](https://blog.getpebble.com/)
-- [Pebbleアプリ](https://play.google.com/store/apps/details?id=com.getpebble.android.basalt&hl=ja)

@@ -6,7 +6,7 @@
 Android Studio 2.2.1以上
 
 ## ビルドマニュアル
-- [SonyCameraビルドマニュアル](https://github.com/DeviceConnect/DeviceConnect-Android/wiki/SonyCamera-Build)
+- [SonyCameraビルドマニュアル](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/SonyCamera-Build)
 
 ## サポートするプロファイル
 

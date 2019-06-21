@@ -8,7 +8,7 @@
 Android Studio 2.2.1以上
 
 ## ビルドマニュアル
-- [Kadecotビルドマニュアル](https://github.com/DeviceConnect/DeviceConnect-Android/wiki/Kadecot-Build)
+- [Kadecotビルドマニュアル](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/Kadecot-Build)
 
 ## サポートするプロファイル
 

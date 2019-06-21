@@ -6,7 +6,7 @@
 Android Studio 2.2.1以上
 
 ## ビルドマニュアル
-- [AllJoynビルドマニュアル](https://github.com/DeviceConnect/DeviceConnect-Android/wiki/AllJoyn-Build)
+- [AllJoynビルドマニュアル](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/AllJoyn-Build)
 
 ## サポートするプロファイル
 

@@ -6,7 +6,7 @@
 Android Studio 2.2.1以上
 
 ## ビルドマニュアル
-- [F-PLUGビルドマニュアル](https://github.com/DeviceConnect/DeviceConnect-Android/wiki/F-PLUG-Build)
+- [F-PLUGビルドマニュアル](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/F-PLUG-Build)
 
 ## サポートするプロファイル
 
