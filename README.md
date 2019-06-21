@@ -1,7 +1,7 @@
 Click [here](readme.en.md) for description of English.
 
 # DeviceConnect-Old について
-DeviceConnect-Oldは、最新版のプラットフォームではサポートできなくなったDevice Connectシステムのプラグインやアプリのソースコード置き場になります。
+DeviceConnect-Oldは、最新版のプラットフォームではサポートが難しくなったDevice Connectシステムのプラグインやアプリのソースコード置き場になります。
 ここでは、以下のことについて解説していきます。
 
 * プロジェクトの説明
