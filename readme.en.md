@@ -19,9 +19,13 @@ Click [here](https://github.com/DeviceConnect/DeviceConnect-Docs/wiki)
 |[dConnectDeviceAllJoyn](Android/dConnectDeviceAllJoyn)|Device Plug-in for AllJoyn.|
 |[dConnectDeviceFPLUG](Android/dConnectDeviceFPLUG)|Device Plug-in for F-PLUG.|
 |[dConnectDeviceKadecot](Android/dConnectDeviceKadecot)|Device Plug-in for Kadecot.|
+|[dConnectDeviceHVC](Android/dConnectDeviceHVC)|Device Plug-in for HVC-C.|
+|[dConnectDeviceHVCC2W](Android/dConnectDeviceHVCC2W)|Device Plug-in for HVC-C2W.|
+|[dConnectDeviceHVCP](Android/dConnectDeviceHVCP)|Device Plug-in for HVC-P.|
 |[dConnectDevicePebble](Android/dConnectDevicePebble)|Device Plug-in for Pebble.|
 |[dConnectDeviceSonyCamera](Android/dConnectDeviceSonyCamera)|Device Plug-in for SonyCamera such as QX10.|
 |[dConnectDeviceSonySW](Android/dConnectDeviceSonySW)|Device Plug-in for SonySmartWatch<br>※SmartWatch3 is not supported.|
+|[dConnectDeviceSphero](dConnectDevicePlugin/dConnectDeviceSphero)|Device Plug-in for Sphero.|
 |[dConnectApp](Android/dConnectApp)|DeviceConnect operation check for app.|
 
 
@@ -31,6 +35,10 @@ People who want to develop the DeviceConnectManager and device Plug-ins, please 
 * [AllJoyn](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/AllJoyn-Build)
 * [F-PLUG](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/F-PLUG-Build)
 * [Kadecot](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/Kadecot-Build)
+* [HVC](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/HVCDevice-Build)
+* [HVC-C2W](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/HVCC2WDevice-Build)
+* [HVC-P](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/HVCPDevice-Build)
 * [Pebble](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/Pebble-Build)
 * [SonyCamera](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/SonyCamera-Build)
 * [SonySW](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/SonySW-Build)
+* [Sphero](https://github.com/DeviceConnect/DeviceConnect-Android/wiki/Sphero-Build)
