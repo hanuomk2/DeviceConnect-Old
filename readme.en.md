@@ -19,6 +19,7 @@ Click [here](https://github.com/DeviceConnect/DeviceConnect-Docs/wiki)
 |[dConnectDeviceAllJoyn](Android/dConnectDeviceAllJoyn)|Device Plug-in for AllJoyn.|
 |[dConnectDeviceFPLUG](Android/dConnectDeviceFPLUG)|Device Plug-in for F-PLUG.|
 |[dConnectDeviceKadecot](Android/dConnectDeviceKadecot)|Device Plug-in for Kadecot.|
+|[dConnectDeviceHitoe](Android/dConnectDeviceHitoe)|Device Plug-in for Hitoe.|
 |[dConnectDeviceHVC](Android/dConnectDeviceHVC)|Device Plug-in for HVC-C.|
 |[dConnectDeviceHVCC2W](Android/dConnectDeviceHVCC2W)|Device Plug-in for HVC-C2W.|
 |[dConnectDeviceHVCP](Android/dConnectDeviceHVCP)|Device Plug-in for HVC-P.|
@@ -35,6 +36,7 @@ People who want to develop the DeviceConnectManager and device Plug-ins, please 
 * [AllJoyn](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/AllJoyn-Build)
 * [F-PLUG](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/F-PLUG-Build)
 * [Kadecot](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/Kadecot-Build)
+* [Hitoe](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/Hitoe-Build)
 * [HVC](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/HVCDevice-Build)
 * [HVC-C2W](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/HVCC2WDevice-Build)
 * [HVC-P](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/HVCPDevice-Build)

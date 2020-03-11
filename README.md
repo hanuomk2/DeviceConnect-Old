@@ -16,6 +16,7 @@ Device Connect システムについての詳細な説明は、[こちら](https
 |[dConnectDeviceAllJoyn](Android/dConnectDeviceAllJoyn)|AllJoynのデバイスプラグイン。|
 |[dConnectDeviceFPLUG](Android/dConnectDeviceFPLUG)|F-PLUGのデバイスプラグイン。|
 |[dConnectDeviceKadecot](Android/dConnectDeviceKadecot)|Kadecotのデバイスプラグイン。|
+|[dConnectDeviceHitoe](Android/dConnectDeviceHitoe)|Hitoeのデバイスプラグイン。|
 |[dConnectDeviceHVC](Android/dConnectDeviceHVC)|HVC-Cのデバイスプラグイン。|
 |[dConnectDeviceHVCC2W](Android/dConnectDeviceHVCC2W)|HVC-C2Wのデバイスプラグイン。|
 |[dConnectDeviceHVCP](Android/dConnectDeviceHVCP)|HVC-Pのデバイスプラグイン。|
@@ -33,6 +34,7 @@ Device Connect Managerや各デバイスプラグインを開発したい人は�
 * [AllJoyn](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/AllJoyn-Build)
 * [F-PLUG](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/F-PLUG-Build)
 * [Kadecot](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/Kadecot-Build)
+* [Hitoe](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/Hitoe-Build)
 * [HVC](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/HVCDevice-Build)
 * [HVC-C2W](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/HVCC2WDevice-Build)
 * [HVC-P](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/HVCPDevice-Build)
