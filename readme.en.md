@@ -26,8 +26,16 @@ Click [here](https://github.com/DeviceConnect/DeviceConnect-Docs/wiki)
 |[dConnectDevicePebble](Android/dConnectDevicePebble)|Device Plug-in for Pebble.|
 |[dConnectDeviceSonyCamera](Android/dConnectDeviceSonyCamera)|Device Plug-in for SonyCamera such as QX10.|
 |[dConnectDeviceSonySW](Android/dConnectDeviceSonySW)|Device Plug-in for SonySmartWatch<br>※SmartWatch3 is not supported.|
-|[dConnectDeviceSphero](dConnectDevicePlugin/dConnectDeviceSphero)|Device Plug-in for Sphero.|
+|[dConnectDeviceSphero](Android/dConnectDeviceSphero)|Device Plug-in for Sphero.|
 |[dConnectApp](Android/dConnectApp)|DeviceConnect operation check for app.|
+|[dConnectDeviceAndroidWear](Android/dConnectDeviceAndroidWear)|Device Plug-in for AndroidWear.|
+|[dConnectDeviceChromeCast](Android/dConnectDeviceChromeCast)|Device Plug-in for ChromeCast.|
+|[dConnectDeviceFaBo](Android/dConnectDeviceFaBo)|Device Plug-in for FaBo.|
+|[dConnectDeviceHeartRate](Android/dConnectDeviceHeartRate)|Device Plug-in for HeartRate such as Mio Alpha.|
+|[dConnectDeviceHOGP](Android/dConnectDeviceHOGP)|Device Plug-in for HOGP.|
+|[dConnectDeviceHue](Android/dConnectDeviceHue)|Device Plug-in for Hue.|
+|[dConnectDeviceIRKit](Android/dConnectDeviceIRKit)|Device Plug-in for IRKit.|
+|[dConnectDeviceTheta](Android/dConnectDeviceTheta)|Device Plug-in for THETA.|
 
 
 # Build Manuals
@@ -43,4 +51,15 @@ People who want to develop the DeviceConnectManager and device Plug-ins, please 
 * [Pebble](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/Pebble-Build)
 * [SonyCamera](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/SonyCamera-Build)
 * [SonySW](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/SonySW-Build)
-* [Sphero](https://github.com/DeviceConnect/DeviceConnect-Android/wiki/Sphero-Build)
+* [Sphero](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/Sphero-Build)
+* [ChromeCast](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/ChromeCast-Build)
+* [FaBo](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/FaBo-Build)
+* [HeartRate](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/HeartRateDevice-Build)
+* [HOGP](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/HOGP-Build)
+* [Host](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/Host-Build)
+* [Hue](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/Hue-Build)
+* [IRKit](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/IRKit-Build)
+* [Linking](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/Linking-Build)
+* [Theta](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/Theta-Build)
+* [UVC](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/UVC-Build)
+* [AndroidWear](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/AndroidWear-Build)
