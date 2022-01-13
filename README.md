@@ -23,8 +23,17 @@ Device Connect システムについての詳細な説明は、[こちら](https
 |[dConnectDevicePebble](Android/dConnectDevicePebble)|Pebbleのデバイスプラグイン。|
 |[dConnectDeviceSonyCamera](Android/dConnectDeviceSonyCamera)|QX10などのSonyCameraのデバイスプラグイン。|
 |[dConnectDeviceSonySW](Android/dConnectDeviceSonySW)|SonySmartWatchデバイスプラグイン。<br>※SmartWatch3は未対応。|
-|[dConnectDeviceSphero](dConnectDevicePlugin/dConnectDeviceSphero)|Spheroのデバイスプラグイン。|
+|[dConnectDeviceSphero](Android/dConnectDeviceSphero)|Spheroのデバイスプラグイン。|
 |[dConnectApp](Android/dConnectApp)| DeviceConnectの動作確認用アプリ。|
+|[dConnectDeviceAndroidWear](Android/dConnectDeviceAndroidWear)|AndroidWearのデバイスプラグイン。|
+|[dConnectDeviceChromeCast](Android/dConnectDeviceChromeCast)|Chromecastのデバイスプラグイン。 |
+|[dConnectDeviceFaBo](Android/dConnectDeviceFaBo)|FaBoのデバイスプラグイン。|
+|[dConnectDeviceHeartRate](Android/dConnectDeviceHeartRate)|Mio AlphaなどのHeartRateのデバイスプラグイン。|
+|[dConnectDeviceHOGP](Android/dConnectDeviceHOGP)|HOGPのデバイスプラグイン。|
+|[dConnectDeviceHue](Android/dConnectDeviceHue)|Hueのデバイスプラグイン。|
+|[dConnectDeviceIRKit](Android/dConnectDeviceIRKit)|IRKitのデバイスプラグイン。|
+|[dConnectDeviceSwitchBot](Android/dConnectDeviceSwitchBot)|SwitchBotのデバイスプラグイン。|
+|[dConnectDeviceTheta](Android/dConnectDeviceTheta)|THETAのデバイスプラグイン。|
 
 
 
@@ -41,4 +50,16 @@ Device Connect Managerや各デバイスプラグインを開発したい人は�
 * [Pebble](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/Pebble-Build)
 * [SonyCamera](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/SonyCamera-Build)
 * [SonySW](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/SonySW-Build)
-* [Sphero](https://github.com/DeviceConnect/DeviceConnect-Android/wiki/Sphero-Build)
+* [Sphero](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/Sphero-Build)
+* [Sphero](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/Sphero-Build)
+* [ChromeCast](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/ChromeCast-Build)
+* [FaBo](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/FaBo-Build)
+* [HeartRate](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/HeartRateDevice-Build)
+* [HOGP](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/HOGP-Build)
+* [Host](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/Host-Build)
+* [Hue](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/Hue-Build)
+* [IRKit](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/IRKit-Build)
+* [Linking](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/Linking-Build)
+* [Theta](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/Theta-Build)
+* [UVC](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/UVC-Build)
+* [AndroidWear](https://github.com/DeviceConnect/DeviceConnect-Old/wiki/AndroidWear-Build)
