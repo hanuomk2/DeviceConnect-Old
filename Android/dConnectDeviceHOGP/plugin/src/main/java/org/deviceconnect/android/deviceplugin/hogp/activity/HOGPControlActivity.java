@@ -14,7 +14,6 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CompoundButton;
 import android.widget.ToggleButton;
 
 import org.deviceconnect.android.deviceplugin.hogp.R;
@@ -62,6 +61,16 @@ public class HOGPControlActivity extends HOGPBaseActivity {
      * MotionEventを送信した時間.
      */
     private long mTime;
+
+    // add 2023.3.28
+    //指定ミリ秒実行を止めるメソッド
+    public synchronized void sleep(long msec)
+    {
+        try
+        {
+            wait(msec);
+        }catch(InterruptedException e){}
+    };
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -206,6 +215,8 @@ public class HOGPControlActivity extends HOGPBaseActivity {
                 { R.id.activity_control_key_bracket_start, 1, 0x00, 0x30 },
                 { R.id.activity_control_key_bracket_end,   1, 0x00, 0x32 },
                 { R.id.activity_control_key_under,         1, 0x02, 0x87 },
+                // add 2023.03.28
+                { R.id.activity_control_key_micmute,       1, 0x03, 0x10 },
         };
 
         for (int[] map : keyMap) {
@@ -224,6 +235,88 @@ public class HOGPControlActivity extends HOGPBaseActivity {
             });
         }
 
+        // add 2023.3.28 -- start --
+        // Office ショートカットキーの定義
+        final int[][] keyMap_office = {
+                {R.id.activity_control_key_top,     0x04, 0x0B, 0x04, 0x17},
+                {R.id.activity_control_key_middle,  0x04, 0x0B, 0x04, 0x10},
+                {R.id.activity_control_key_bottom,  0x04, 0x0B, 0x04, 0x05},
+                {R.id.activity_control_key_sleft,   0x04, 0x0B, 0x04, 0x0F},
+                {R.id.activity_control_key_center,  0x04, 0x0B, 0x04, 0x06},
+                {R.id.activity_control_key_sright,  0x04, 0x0B, 0x04, 0x15},
+        };
+        for (int[] map : keyMap_office) {
+            final byte modifier = (byte) (map[1] & 0xFF);
+            final byte keyCode = (byte) (map[2] & 0xFF);
+            final byte keyCode1 = (byte) (map[3] & 0xFF);
+            final byte keyCode2 = (byte) (map[4] & 0xFF);
+            findViewById(map[0]).setOnClickListener((v) -> {
+                if (mHOGPServer != null) {
+                    mHOGPServer.sendKeyDown(modifier, keyCode);
+                    mHOGPServer.sendKeyUp();
+                    sleep(100);
+                    mHOGPServer.sendKeyDown((byte)0x00, keyCode1);
+                    mHOGPServer.sendKeyUp();
+                    sleep(100);
+                    mHOGPServer.sendKeyDown((byte)0x00, keyCode2);
+                    mHOGPServer.sendKeyUp();
+                }
+            });
+        }
+        // Office ショートカットキー(Bold)の定義
+        findViewById(R.id.activity_control_key_bold).setOnClickListener((v) -> {
+            if (mHOGPServer != null) {
+                ToggleButton toggle_excel = findViewById(R.id.activity_control_key_excel);
+                if (toggle_excel.isChecked()) {
+                    // excelの場合、Ctrl+2
+                    mHOGPServer.sendKeyDown((byte) 0x01, (byte) 0x1F);
+                    mHOGPServer.sendKeyUp();
+                } else {
+                    // wordの場合、Ctrl+B
+                    mHOGPServer.sendKeyDown((byte) 0x01, (byte) 0x05);
+                    mHOGPServer.sendKeyUp();
+                }
+            }
+        });
+        // Office ショートカットキー(下線)の定義
+        findViewById(R.id.activity_control_key_underline).setOnClickListener((v) -> {
+            if (mHOGPServer != null) {
+                ToggleButton toggle_excel = findViewById(R.id.activity_control_key_excel);
+                if (toggle_excel.isChecked()) {
+                    // excelの場合、Ctrl+4
+                    mHOGPServer.sendKeyDown((byte) 0x01, (byte) 0x21);
+                    mHOGPServer.sendKeyUp();
+                } else {
+                    // wordの場合、Ctrl+U
+                    mHOGPServer.sendKeyDown((byte) 0x01, (byte) 0x18);
+                    mHOGPServer.sendKeyUp();
+                }
+            }
+        });
+        // Office ショートカットキー(取消線)の定義
+        findViewById(R.id.activity_control_key_strikethrough).setOnClickListener((v) -> {
+            if (mHOGPServer != null) {
+                ToggleButton toggle_excel = findViewById(R.id.activity_control_key_excel);
+                if (toggle_excel.isChecked()) {
+                    // excelの場合、Ctrl+5
+                    mHOGPServer.sendKeyDown((byte) 0x01, (byte) 0x22);
+                    mHOGPServer.sendKeyUp();
+                } else {
+                    // wordの場合、Alt+H→4
+                    mHOGPServer.sendKeyDown((byte) 0x04, (byte) 0x0B);
+                    mHOGPServer.sendKeyUp();
+                    sleep(100);
+                    mHOGPServer.sendKeyDown((byte) 0x00, (byte) 0x21);
+                    mHOGPServer.sendKeyUp();
+                }
+            }
+        });
+        // [etc]キーをクリックした場合の処理
+        findViewById(R.id.activity_control_key_etc).setOnClickListener((v) -> {
+            changeKeyboard_etc();
+        });
+        // -- end --
+
         findViewById(R.id.activity_control_key_num).setOnClickListener((v) -> {
             changeKeyboard();
         });
@@ -233,6 +326,7 @@ public class HOGPControlActivity extends HOGPBaseActivity {
             changeUppercase(isChecked);
         });
     }
+
 
     @Override
     public boolean onMenuItemSelected(int featureId, MenuItem item) {
@@ -421,12 +515,39 @@ public class HOGPControlActivity extends HOGPBaseActivity {
     private void changeKeyboard() {
         View v1 = findViewById(R.id.activity_control_keyboard_a);
         View v2 = findViewById(R.id.activity_control_keyboard_s);
-        if (v1.getVisibility() == View.GONE) {
+        // add 2023.03.28
+        View v3 = findViewById(R.id.activity_control_keyboard_e);
+        if (v2.getVisibility() == View.VISIBLE) {
+            v1.setVisibility(View.VISIBLE);
+            v2.setVisibility(View.GONE);
+            v3.setVisibility(View.GONE);
+        } else {
+            v1.setVisibility(View.GONE);
+            v2.setVisibility(View.VISIBLE);
+            v3.setVisibility(View.GONE);
+        }
+        /*if (v1.getVisibility() == View.GONE) {
             v1.setVisibility(View.VISIBLE);
             v2.setVisibility(View.GONE);
         } else {
             v1.setVisibility(View.GONE);
             v2.setVisibility(View.VISIBLE);
+        }*/
+    }
+
+    // add 2023.03.28
+    private void changeKeyboard_etc() {
+        View v1 = findViewById(R.id.activity_control_keyboard_a);
+        View v2 = findViewById(R.id.activity_control_keyboard_s);
+        View v3 = findViewById(R.id.activity_control_keyboard_e);
+        if (v3.getVisibility() == View.VISIBLE) {
+            v1.setVisibility(View.VISIBLE);
+            v2.setVisibility(View.GONE);
+            v3.setVisibility(View.GONE);
+        } else {
+            v1.setVisibility(View.GONE);
+            v2.setVisibility(View.GONE);
+            v3.setVisibility(View.VISIBLE);
         }
     }
 }

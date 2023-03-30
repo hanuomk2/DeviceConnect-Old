@@ -135,7 +135,6 @@
     <string name="activity_control_key_dot" translatable="true">.</string>
     <string name="activity_control_key_comma" translatable="true">,</string>
 
-
     <string name="activity_control_key_caps" translatable="true">caps</string>
     <string name="activity_control_key_enter" translatable="true">Enter</string>
     <string name="activity_control_key_delete" translatable="true">del</string>
@@ -147,4 +146,19 @@
     <string name="activity_control_key_right" translatable="true">→</string>
     <string name="activity_control_key_mode" translatable="true">あ/A</string>
     <string name="activity_control_key_num" translatable="true">123</string>
+    <!-- add 2023.03.27-->
+    <string name="activity_control_key_etc" translatable="true">etc</string>
+    <string name="activity_control_key_excel" translatable="true">excel</string>
+    <string name="activity_control_key_word" translatable="true">word</string>
+
+    <string name="activity_control_key_top" translatable="true">top</string>
+    <string name="activity_control_key_middle" translatable="true">middle</string>
+    <string name="activity_control_key_bottom" translatable="true">bottom</string>
+    <string name="activity_control_key_sleft" translatable="true">left</string>
+    <string name="activity_control_key_sright" translatable="true">right</string>
+    <string name="activity_control_key_center" translatable="true">center</string>
+    <string name="activity_control_key_bold" translatable="true">bold</string>
+    <string name="activity_control_key_underline" translatable="true">下線</string>
+    <string name="activity_control_key_strikethrough" translatable="true">取消線</string>
+    <string name="activity_control_key_micmute" translatable="true">mic mute</string>
 </resources>

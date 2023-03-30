@@ -41,7 +41,19 @@
 
                 <include layout="@layout/contents_keyboard_special"/>
             </FrameLayout>
+
+            <!-- add 2023.03.28 -->
+            <FrameLayout
+                android:id="@+id/activity_control_keyboard_e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include layout="@layout/contents_keyboard_etc"/>
+            </FrameLayout>
+
         </FrameLayout>
+
 
         <FrameLayout
             android:layout_width="match_parent"
